@@ -1,6 +1,7 @@
 # Firebase connector plugin
 
-<img width="1383" src="https://raw.githubusercontent.com/eukarya-inc/reearth-plugin-place-finder/main/src/firebaseConnectorTopImg.png">
+<img width="1383" src="https://github.com/eukarya-inc/reearth-plugin-firebase-connector/blob/main/src/firebaseConnectorTopImg.png">
+
 
 ## About this plugin
 
