@@ -1,0 +1,78 @@
+id: firebase-connector
+name: Firebase Connector
+version: 0.1.0
+extensions:
+  - id: firebase-connector
+    type: widget
+    name: Firebase Connector
+    schema:
+      groups:
+        - id: fb_config
+          title: Firebase Config
+          fields:
+            - id: api_key
+              type: string
+              title: API Key
+            - id: auth_domain
+              type: string
+              title: Auth Domain
+            - id: project_id
+              type: string
+              title: Project Id
+            - id: storage_bucket
+              type: string
+              title: Storage Bucket
+            - id: messagingSender_id
+              type: string
+              title: Messaging Sender Id
+            - id: app_id
+              type: string
+              title: App Id
+            - id: measurement_id
+              type: string
+              title: Measurement Id
+        - id: setting
+          title: Setting
+          fields:
+            - id: markerType
+              type: string
+              title: Marker Style
+              choices:
+                - key: icon
+                  label: Icon
+                - key: point
+                  label: Point
+              # defaultValue: point
+            - id: pointColor
+              type: string
+              title: Point color
+              ui: color
+              availableIf:
+                field: markerType
+                type: string
+                value: point
+              # defaultValue: "#FFFFFF"
+            - id: pointSize
+              type: number
+              title: Point size
+              suffix: px
+              availableIf:
+                field: markerType
+                type: string
+                value: point
+              # defaultValue: 10
+            - id: imageUrl
+              type: url
+              title: Image URL
+              ui: image
+              availableIf:
+                field: markerType
+                type: string
+                value: icon
+            - id: imageScale
+              type: number
+              title: Image scale
+              availableIf:
+                field: markerType
+                type: string
+                value: icon
