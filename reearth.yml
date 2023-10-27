@@ -1,6 +1,6 @@
 id: firebase-connector
 name: Firebase Connector
-version: 1.0.1
+version: 1.0.２
 extensions:
   - id: firebase-connector
     type: widget
